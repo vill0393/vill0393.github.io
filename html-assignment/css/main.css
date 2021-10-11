@@ -1,0 +1,26 @@
+body{
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+footer, h1{
+    background-color:rgb(221, 214, 224);
+}
+
+.color{
+    color:rgb(109, 143, 151);
+}
+
+#my-image{
+box-shadow: 0px 0px 2px 1px rgb(0, 0, 0);;
+} 
+
+li:nth-child(2n-1){
+    background-color:rgb(181, 196, 199);
+}
+a:link{
+    text-decoration: none; background-color: rgb(209, 157, 89); border:rgb(8, 51, 241) 2px dashed;
+}
+a:hover{
+    background-color: rgb(245, 237, 170);
+}
