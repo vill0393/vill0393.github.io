@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document information -->
+    <meta charset="UTF-8">
+    <title>Lone Starfish</title>
+    <link href="css/css.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- I started with the article tag, however I was not sure if it is correct to place it before the header. 
+      Tried to use it after the header tag but the html validator kept telling me I was missing a head tag -->
+      <article>  
+        <header>
+          <img class="header-image" src="images/lone-starfish-wide.jpg" alt="Starfish image">
+          <h1>Lone Starfish</h1>
+          <nav class="navbar">
+            <ul>
+               <li>
+                  <a href="#home">HOME</a>
+               </li>
+               <li>
+                  <a href="#story">STORY</a>
+               </li>
+               <li>
+                  <a href="#contact">CONTACT</a>
+               </li>
+            </ul>
+        </nav>
+      </header>
+        
+      <section>
+        <h2>
+        Life of a Starfish
+        </h2>
+        <!-- We can modify the size of the image using the width & height in the image tag. I Used float:left to sorrund the image with text  -->
+        <img src="images/lone-starfish.jpg" style="float:left; padding: 10px 10px 0px 0px;" alt="starfish image" width="200" height="200"/>
+        <p>
+        Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+        </p>
+        </section>
+
+        <section>
+        <h3>
+            Facts About Starfish
+        </h3>
+            <!-- For some reason the bullets are not shown in the webpage, I couldn't figure out what the problem was -->
+            <ul style="list-style-type:disc">
+            <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+            <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+            <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+            <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+            </ul>
+        </section>
+
+        <!-- I added the id form inside the section tag to be able to modify the margin and padding on all of them -->
+        <section id="form">
+        <h4>
+            Contact to learn more
+        </h4>
+        <form action="index.html" method="get">
+        <p>
+            <label for="username">Your name:</label>
+            <!-- With the value size I was able to modify the width of the input text box! -->
+            <input id="username" size="138">
+        </p>
+        <p>
+            <label for="email">Your email:</label>
+            <input id="email" size="138">
+        </p>
+        <p>
+            <label for="message">Enter your message:</label>
+            <input id="message" size="138">
+        </p>
+        <h5>Would you like to visit the startfish?</h5>
+        <p>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="startfish" value="yes">
+          <label for="no">No</label>
+          <input type="radio" id="no" name="starfish" value="no">
+          <label for="maybe">Maybe</label>
+          <input type="radio" id="maybe" name="starfish" value="maybe">
+        </p>
+        <p>
+          <button type="submit" name="send">Send</button>
+          </p>
+        </form>
+        </section>
+  
+        <footer>
+        <p>&copy; Lone Starfish</p>
+        </footer>
+
+      </article>
+    </div>    
+    <!-- Document Content -->
+  </body>
+</html>
