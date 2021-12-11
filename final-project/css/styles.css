@@ -75,15 +75,12 @@ header{
     padding:10px;
 }
 
-
 .header-image{
     background-image: url(images/main-banner);
     width: 100%;
-    
 }
 
 nav{
-    color:#c78b07;
     font-size: 1rem;
     background-color: #222222;
     display: block;
@@ -91,9 +88,13 @@ nav{
     line-height: 3rem;
 }
 
+ul a{
+    color:#c78b07;
+    text-decoration: none;
+}
 #search{
     margin-bottom:10px;
-    width:95%;
+    width:90%;
     height:30px;
 }
 
@@ -134,17 +135,23 @@ p{
     font-weight:400;
     padding-left:10px;
 }
-
-.overlaycontainer{
+/* to place text on top of image*/
+.overlaycontainer, overlaycontainer-2{
     position:relative;
 }
 
 .welcome-to{
     background-color: rgba(0,0,0,0.6);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     position: absolute;
-    margin-top: -450px;
+    top:50px;
+}
+
+.our-vision{
+    color:white;
+    position:absolute;
+    margin-top:30px;
 }
 
 .about{
@@ -196,9 +203,11 @@ button{
     border: 0;
 }
 
-#fullname, #email, #message{
-    width: 99.5%;
+input{
+    display:block;
+    width:100%;
 }
+
 #send-dark{
     margin:0 0 0 0;
     padding:5px 5px 5px 5px;
@@ -230,5 +239,3 @@ th{
 .google-maps{
     width:100%;
 }
-
-
