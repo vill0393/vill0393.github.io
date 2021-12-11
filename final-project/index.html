@@ -25,7 +25,7 @@
                     <li>Team</li>
                     <li>Contact</li>
                 </ul>
-                <input type="text" id="search" name="search" placeholder="Search.."> <!-- Search bar -->
+                <input type="text" id="search" name="search" placeholder="Search.."> <i class="icon icon-zoom"></i> <!-- Search bar -->
             </nav>
             <img class="header-image" src="images/main-banner.jpg" alt="Main Banner"> <!-- All images must have and alternative text -->
         
@@ -132,7 +132,7 @@
         </div>
     </section>
 
-    <section id="form">
+    <section>
             <h2>Contact Us</h2>
             <h3>Send us a message</h3>
         <form class="contact-us" action="index.html" method="get">
@@ -149,31 +149,42 @@
                 <input id="message">
             </p>
             <p>
-                <button class="send-dark" type="submit" name="send">Send</button>
+                <button id="send-dark" type="submit" name="send">Send</button>
             </p>
         </form>
     </section>
-
+ 
     <section>
-        <div class="hours">
             <h3>Hours of operation</h3>
-                <p>Days</p>
-                <p>Hours</p>
-                <p>Monday - Friday</p>
-                <p>9 AM - 6 PM</p>
-                <p>Saturday - Sunday</p>
-                <p>Closed</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday-Friday</td>
+                        <td>9 AM - PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-        <div class="googleMaps"> <!-- We use the iframe tag to add a link from another webpage like youtube or google maps, etc -->
+        <div class="google-maps"> <!-- We use the iframe tag to add a link from another webpage like youtube or google maps, etc -->
             <h3>Location</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044913!2d-75.75712548469339!3d45.349931549082264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses!2sca!4v1637855223421!5m2!1ses!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <footer>
             <p>&copy; Copyright Three Star Media, 2020</p>
-            <p>All images are taken from Unsplash</p>
+            <p>All images are taken from <a href="http://www.unsplash.com">Unsplash</a></p>
         </footer>
     </div>
   </body>

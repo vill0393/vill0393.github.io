@@ -107,7 +107,7 @@ h1{
 h2{
     font-size:2.5rem;
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom:10px;
     margin-left:10px;
 }
@@ -197,9 +197,11 @@ button{
 }
 
 #fullname, #email, #message{
-    width: 100%;
+    width: 99.5%;
 }
-.send-dark{
+#send-dark{
+    margin:0 0 0 0;
+    padding:5px 5px 5px 5px;
     color:#c78b07;
     background-color: #222222;
 }
@@ -210,5 +212,23 @@ footer{
     background-color:#222222 ;
 }
 
+footer a{
+    color:#c78b07;
+}
+
+table {
+    width:100%;
+}
+
+table, tr, td, th{
+    border:1px solid black;
+    padding:10px;
+}
+th{
+    background-color:#ffe6ac;
+}
+.google-maps{
+    width:100%;
+}
 
 
