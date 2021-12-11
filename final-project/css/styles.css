@@ -249,11 +249,20 @@ th{
 @media screen and (min-width:760px) {
     .container{
         width:80%;
-        max-width:1260px;
+        max-width:1200px;
     }
 }
 
-.grid-1{
+.grid1{
     display: grid;
     grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr;
+    gap:.5em;
+    
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:.5em;
 }
