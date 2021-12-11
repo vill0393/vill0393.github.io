@@ -242,3 +242,18 @@ th{
 .google-maps{
     width:100%;
 }
+
+/****************************************************************** 
+                            Desktop Styling
+******************************************************************/
+@media screen and (min-width:760px) {
+    .container{
+        width:80%;
+        max-width:1260px;
+    }
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
