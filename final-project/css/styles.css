@@ -187,18 +187,28 @@ p{
     padding-bottom: 20px;
 }
 
-
 button{
     margin:10px 0 10px 10px;
     color:white;
-    background-color: black;
+    background-color:#222222;
     font-size:1rem;
     padding:20px 20px 20px 20px;
     border: 0;
 }
 
-
-
+#fullname, #email, #message{
+    width: 100%;
+}
+.send-dark{
+    color:#c78b07;
+    background-color: #222222;
+}
+footer{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color:#c78b07;
+    background-color:#222222 ;
+}
 
 
 
