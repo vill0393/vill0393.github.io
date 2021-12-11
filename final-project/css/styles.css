@@ -58,8 +58,6 @@ table {
     background-color:white;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 html{
     font-family: 'Open Sans', sans-serif;
     max-width: 1200px;   
@@ -92,6 +90,7 @@ ul a{
     color:#c78b07;
     text-decoration: none;
 }
+
 #search{
     margin-bottom:10px;
     width:90%;
@@ -103,14 +102,14 @@ a {
 
 h1{
     color:white;
-    font-size: 2.8rem;
-    font-weight:600;
-    line-height:4rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
 }
 
 h2{
     font-size:2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     margin-top: 25px;
     margin-bottom:10px;
     margin-left:10px;
@@ -118,7 +117,7 @@ h2{
 
 h3{
     font-size:1.7rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 25px;
     margin-bottom:5px;
     padding-left:10px;
@@ -139,7 +138,7 @@ p{
     padding-left:10px;
 }
 /* to place text on top of image*/
-.overlaycontainer, overlaycontainer-2{
+.overlaycontainer, .overlaycontainer-2{
     position:relative;
 }
 
@@ -252,19 +251,90 @@ th{
         max-width:1200px;
     }
 
+.logo-start{
+    background-image: url(images/.logo-start);
+    background: #222222;
+    margin-left:20px;
+}
+ul{
+    display:flex;
+    background: #222222;
+    justify-content: space-around;
+    margin-left: 150px;  
+}
+
+li{
+    flex-grow:1;
+}
+
+a:hover {
+    background-color:#c78b07;
+    color: #222222;
+  }
+
+#search{
+    margin-bottom:10px;
+    width:20%;
+    height:30px;
+}
+
+h1{
+    color:white;
+    font-size: 4rem;
+    font-weight:800;
+    line-height:6rem;
+}
+
+.welcome-to{
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top:50px;
+}
+
+.grid-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:50px;
+}
+
+p.move{
+    grid-column-start: 2;
+    grid-column-end:3;
+}
 
 .grid1{
     display: grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows:1fr;
-    gap:.5em;
-    
+    gap:.5em;  
 }
 
 .grid2{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     gap:.5em;
+}
+
+.grid3{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    background-color: #ffe6ac;
+}
+
+.overlaycontainer{
+    position:relative;
+}
+
+.welcome-to{
+    background-color: rgba(0,0,0,0.6);
+    padding:20px 20px 20px 20px;
+    position: absolute;
+    top:50px;
+    left:50px;
+    right:50px;
 }
 
 }

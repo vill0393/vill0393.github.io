@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google fonts Open sans, Import did not work so I had to link it -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="css/icons.css" rel="stylesheet"> <!-- we linked the icons -->
     <link href="css/styles.css" rel="stylesheet"> <!-- I already linked the css styles sheet -->
     <title>HTML Mock-Up</title>
@@ -23,8 +29,8 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
+                    <input type="search" id="search" name="search"  placeholder="Search"></i><!-- Search bar -->
                 </ul>
-                <input type="text" id="search" name="search" placeholder="Search.."><!-- Search bar -->
             </nav>
             
         <div class="overlaycontainer">
@@ -39,19 +45,23 @@
         </div>
         </header>
 
+    <!-- ABOUT US -->
     <section>
         <div class="about">
+    <div class="grid-about">
             <img class="about-us" src="images/about-us.jpg" alt="About Us">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            <p class="move">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
-                nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                nostrud exercitation ullamco laboris nisi ut aliquip.</p class="move">
+            <p class="move">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
-                nostrud exercitation ullamco laboris.</p>
+                nostrud exercitation ullamco laboris.</p class="move">
         </div>
+    </div>
     </section>
 
+    <!-- OUR SERVICES SECTION -->
     <section>
         <h2>Our Services</h2>
     <!-- GRID 1 -->
@@ -67,7 +77,7 @@
 
         <div class="mark">
             <img class="marketing" src="images/marketing.jpg" alt="Marketing">
-            <h2>Marketing</h2>
+            <h3>Marketing</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -79,7 +89,7 @@
     <div class="grid2">
         <div class="video-production">
             <img class="video" src="images/video.jpg" alt="Video">
-            <h2>Video Production</h2>
+            <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -88,7 +98,7 @@
 
         <div class="web-development">
             <img class="web" src="images/web.jpg" alt="Web">
-            <h2>Web Development</h2>
+            <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -96,19 +106,21 @@
         </div>
 
         <div class="print">
-            <img class="print" src="images/print.jpg" alt="Print">
-            <h2>Print</h2>
+            <img class="print" src="images/print.jpg"" alt="Print">
+            <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button>Print Plans<i class="icon icon-right"></i></button>
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <Button>Web Plans<i class="icon icon-right"></i></button>
         </div>
     </div>
     </section>
 
+<!-- OUR VISION SECTION -->
     <section>
         <div class="overlaycontainer-2">
                 <div class="our-vision">
-                <h2>Our Vision</h2>
+                <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -118,8 +130,11 @@
         </div>
     </section>
 
-        <h2>Our Team</h2>
+<!-- OUR TEAM SECTION -->
     <section>
+        <h2>Our Team</h2>
+        <!-- GRID 3 -->
+    <div class="grid3">
         <div class="john-doe">
             <img class="john" src="images/john.jpg" alt="John">
             <h3>John Doe</h3>
@@ -137,6 +152,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
+    </div>
     </section>
 
     <section>
@@ -161,6 +177,7 @@
         </form>
     </section>
  
+    <!-- FORM (I had to add it, it was just heads and parragraphs previously) -->
     <section>
             <h3>Hours of operation</h3>
             <table>
