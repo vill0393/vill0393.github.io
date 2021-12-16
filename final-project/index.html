@@ -18,39 +18,39 @@
 
   <body>
     <div class="container">
-        <header>
-        <div class="logo-start">
-            <img class="logo" src="images/logo.png" alt="Logo">
-        </div>
-            <nav>
-                <ul>
+    <header>
+            <nav class="nav-bar">
+                <div class="logo-start">
+                    <img class="logo" src="images/logo.png" alt="Logo">
+                </div>
+                <ul class="u-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
-                    <input type="search" id="search" name="search"  placeholder="Search"></i><!-- Search bar -->
                 </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <button type="submit"><i class="icon icon-search"></i></button>
+                </div>
             </nav>
-            
-        <div class="overlaycontainer">
-            <div class="welcome-to">
-                <h1>Welcome to Three Start Media</h1>
-                    <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
-                    nostrud exercitation ullamco laboris nisi.</p>
-                    <button>Connect with us<i class="icon icon-right"></i></button>
-            </div>
-            <img class="header-image" src="images/main-banner.jpg" alt="Main Banner"> <!-- All images must have and alternative text -->
-        </div>
-        </header>
+
+    <div class="welcome-to">
+        <h1 id="h1-size">Welcome to Three Start Media</h1>
+            <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
+            nostrud exercitation ullamco laboris nisi.</p>
+            <button id="second-button">Connect with us<i class="icon icon-right"></i></button>
+    </div>
+        <img class="header-image" src="images/main-banner.jpg" alt="Main Banner">
+    </header>
 
     <!-- ABOUT US -->
     <section>
         <div class="about">
-    <div class="grid-about">
             <img class="about-us" src="images/about-us.jpg" alt="About Us">
-            <h2>About Us</h2>
+            <h2 id="no-margin">About Us</h2>
             <p class="move">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip.</p class="move">
@@ -72,7 +72,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button>Digital Plans<i class="icon icon-right"></i></button>
+                <button id="second-button">Digital Plans<i class="icon icon-right"></i></button>
         </div>
 
         <div class="mark">
@@ -81,7 +81,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button>Marketing Plans<i class="icon icon-right"></i></button>
+                <button id="second-button">Marketing Plans<i class="icon icon-right"></i></button>
         </div>
     </div>
 
@@ -93,7 +93,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button>Video Plans<i class="icon icon-right"></i></button>
+                <button id="second-button">Video Plans<i class="icon icon-right"></i></button>
         </div>
 
         <div class="web-development">
@@ -102,7 +102,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <Button>Web Plans<i class="icon icon-right"></i></button>
+                <button id="second-button">Web Plans<i class="icon icon-right"></i></button>
         </div>
 
         <div class="print">
@@ -111,12 +111,12 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <Button>Web Plans<i class="icon icon-right"></i></button>
+                <button id="second-button">Web Plans<i class="icon icon-right"></i></button>
         </div>
     </div>
     </section>
 
-<!-- OUR VISION SECTION -->
+    <!-- OUR VISION SECTION -->
     <section>
         <div class="overlaycontainer-2">
                 <div class="our-vision">
@@ -124,7 +124,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button>Learn More<i class="icon icon-right"></i></button>
+                    <button id="second-button">Learn More<i class="icon icon-right"></i></button>
                 </div>
                 <img class="vision" src="images/vision.jpg" alt="Vision">
         </div>
@@ -137,28 +137,36 @@
     <div class="grid3">
         <div class="john-doe">
             <img class="john" src="images/john.jpg" alt="John">
+        </div>
+            <div class="john-doe-info">
             <h3>John Doe</h3>
             <h4>CEO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            <p class="margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-
+            </div>
+        
         <div class="bob-rite">
             <img class="bob" src="images/bob.jpg" alt="Bob">
+        </div>
+            <div class="bob-rite-info">
             <h3>Bob Rite</h3>
             <h4>CFO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            <p class="margin-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
         </div>
     </div>
     </section>
 
-    <section>
-            <h2>Contact Us</h2>
+    <!-- FLEX-BOX -->
+    <!-- CONTACT US -->
+        <h2 id="contact-top-margin">Contact Us</h2>
+    <div class="body-flexbox">
+        <div class="contact-us">
             <h3>Send us a message</h3>
-        <form class="contact-us" action="index.html" method="get">
+            <form class="contact-us" action="index.html" method="get">
             <p>
                 <label for="fullname">Full name</label>
                 <input id="fullname">
@@ -169,47 +177,53 @@
             </p>
             <p>
                 <label for="message">Message</label>
-                <input id="message">
+                <textarea id="message-box" name="info"></textarea>
             </p>
             <p>
                 <button id="send-dark" type="submit" name="send">Send</button>
             </p>
-        </form>
-    </section>
- 
+            </form>
+        </div>
+    
+
     <!-- FORM (I had to add it, it was just heads and parragraphs previously) -->
-    <section>
+        <div class="hours">
             <h3>Hours of operation</h3>
             <table>
-                <thead>
-                    <tr>
-                        <th>Days</th>
-                        <th>Hours</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday-Friday</td>
-                        <td>9 AM - PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday-Friday</td>
+                    <td>9 AM - PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
             </table>
         </div>
-    </section>
+    
+    <!-- GOOGLE MAPS -->
 
         <div class="google-maps"> <!-- We use the iframe tag to add a link from another webpage like youtube or google maps, etc -->
             <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518044913!2d-75.75712548469339!3d45.349931549082264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses!2sca!4v1637855223421!5m2!1ses!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7930.752826608069!2d-75.76112733119396!3d45.34993154908258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1639017215892!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
-        <footer>
-            <p>&copy; Copyright Three Star Media, 2020</p>
-            <p>All images are taken from <a href="http://www.unsplash.com">Unsplash</a></p>
-        </footer>
     </div>
-  </body>
+
+   <!-- Footer --> 
+    <footer>
+        <p>&copy; Copyright Three Star Media, 2020</p>
+        <p>All images are taken from <a href="http://www.unsplash.com">Unsplash</a></p>
+    </footer>
+</div>
+</body>
 </html>
+
+    
